@@ -37,7 +37,7 @@ public class TodosController {
     }
     
     @GetMapping("/test")
-    public ResponseEntity testing(){
-        return ResponseEntity.ok("Test Hello World");
+    public String testing(){
+        return "heellloooo worrlllddd";
     }
 }
