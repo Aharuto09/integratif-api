@@ -35,4 +35,9 @@ public class TodosController {
         todoRepository.deleteById(id);
         return "redirect:/";
     }
+    
+    @GetMapping("/test")
+    public String test(@RequestParam Long id) {
+        return "Hello World";
+    }
 }
