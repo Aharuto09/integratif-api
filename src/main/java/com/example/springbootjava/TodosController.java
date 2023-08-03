@@ -37,7 +37,7 @@ public class TodosController {
     }
     
     @GetMapping("/test")
-    public String test(@RequestParam Long id) {
-        return "Hello World";
+    public ResponseEntity testing(){
+        return ResponseEntity.ok("Test Hello World");
     }
 }
